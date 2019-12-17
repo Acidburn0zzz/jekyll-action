@@ -1,0 +1,25 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a one-line script
+        uses: helaili/jekyll-action@1.0
+      - name: Jekyll Action
+        uses: helaili/jekyll-action@1.0
+      - name: Jekyll Action
+        uses: helaili/jekyll-action@1.0
+        id: Acidburn0zzz
+        if: github.io
+        run: echo test, and deploy your project.
+        shell: bash
+        working-directory: /tmp/mozilla/fakeroot/jekyll-action/.github/workflow/
+        continue-on-error: any
+        timeout-minutes: -1
+        
+
